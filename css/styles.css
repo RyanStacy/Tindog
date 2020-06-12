@@ -62,13 +62,16 @@ p {
     margin: 5% 3% 5% 0%
 }
 
+.download-icon {
+    margin-right: .5rem;
+}
+
 /* Title Image */
 
 .title-image {
     width: 60%;
     transform: rotate(25deg);
     position: absolute;
-    z-index: 0;
     right: 30%;
 }
 
@@ -77,8 +80,7 @@ p {
 #features {
     padding: 7% 15%;
     background-color: #ffffff;
-    position: absolute;
-    z-index: 1;
+    position: relative;
 }
 
 .feature-icons {
@@ -137,3 +139,50 @@ p {
 .pricing-column {
     padding: 3% 2%;
 }
+
+/* CTA Section */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c66;
+    padding: 7% 15% 7%;
+}
+
+.cta-title {
+    color: #ffffff;
+    font-family: 'Montserrat-black';
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+/* Copyright Section */
+
+#footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 7% 15% 2%;
+}
+
+.copyright-text {
+    color: #444444;
+    padding-top: 1rem;
+}
+
+.social-icon {
+    color: #444444;
+    margin: .5rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
